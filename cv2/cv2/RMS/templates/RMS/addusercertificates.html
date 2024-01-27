@@ -1,0 +1,64 @@
+{% extends 'RMS/main.html' %}
+
+
+
+
+{% block content %}
+
+
+<style>
+   
+         .form-control {
+            font-size: 18px; /* Modify the font size to make inputs bigger */
+            padding-left: 500px; /* Adjust padding to increase size */
+            margin-left: -50px
+                     }
+        </style>
+
+
+<div class="container"  >
+
+
+    <div class="poster">
+
+    <div class="insideposter">
+        <h1 class="headofedit"> Add Certificates</h1>
+    </div>
+    </div>
+
+    <div class="card info" >
+        <div class="card-body" style="margin-bottom: 100px;">
+            <form id="profileForm" method="POST" enctype="multipart/form-data" style="padding-left:240px;">
+               
+               
+                <div class="row mb-5">
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control" placeholder="authorization name">
+                    </div>
+                </div>
+
+                
+
+                <div class="row mb-5">
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control"  placeholder="Major">
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control" placeholder="Description">
+                    </div>
+                </div>
+
+                
+                <div class="d-flex py-6">
+                    <a href="#" class="btn btn-primary" style="margin-left: 200px;">Add</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
