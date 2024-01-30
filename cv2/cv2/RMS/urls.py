@@ -77,5 +77,16 @@ urlpatterns = [
 
                path('UserStatus/',views.UserStatus, name="UserStatus" ),
 
+               path('FinalCvUpdate/',views.FinalCvUpdate, name="FinalCvUpdate" ),
+
+               path('comProfileOut/',views.comProfileOut, name="comProfileOut" ),
+
+               path('userProfileOut/',views.userProfileOut, name="userProfileOut" ),
+
+               path('AddSection1/',views.AddSection1, name="AddSection1" ),
+
+               path('UserOther/',views.UserOther, name="UserOther" ),
+
+
 
 ] 

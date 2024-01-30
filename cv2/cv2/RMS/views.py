@@ -169,4 +169,22 @@ def EditRequirements(request):
 @login_required(login_url= 'login')
 def UserStatus(request):
      return render(request,"RMS/UserStatus.html")
+@login_required(login_url= 'login')
+def FinalCvUpdate(request):
+     return render(request,"RMS/FinalCvUpdate.html")
 
+@login_required(login_url= 'login')
+def comProfileOut(request):
+     return render(request,"RMS/comProfileOut.html")
+
+@login_required(login_url= 'login')
+def userProfileOut(request):
+     return render(request,"RMS/userProfileOut.html")
+
+@login_required(login_url= 'login')
+def AddSection1(request):
+     return render(request,"RMS/AddSection1.html")
+
+@login_required(login_url= 'login')
+def UserOther(request):
+     return render(request,"RMS/UserOther.html")
