@@ -1,0 +1,46 @@
+{% extends 'RMS/main.html' %}
+
+
+
+
+{% block content %}
+
+
+
+
+<div class="container"  >
+
+
+    <div class="poster">
+
+    <div class="insideposter">
+        <h1 class="headofedit"> Edit Volunteering work</h1>
+    </div>
+    </div>
+
+    <div class="card info" >
+        <div class="card-body" style="margin-bottom: 60px; width: 100%;">
+            <form id="profileForm" method="POST" enctype="multipart/form-data" style="padding-left:200px;">
+               
+               
+              
+
+                <div class="row "style="width:900px ;" >
+                    <div class="col-lg-8">
+                        <textarea class="form-control" placeholder=" about your Volunteering work . . ." style="height: 400px;"></textarea>
+                    </div>
+                </div>
+
+               
+
+                
+                <div class="d-flex py-6">
+                    <a href="#" class="btn btn-primary" style="margin-left: 200px;">Update</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends 'RMS/main.html' %}
+
+
+
+
+{% block content %}
+
+ <style>
+   
+         .form-control {
+            font-size: 18px; /* Modify the font size to make inputs bigger */
+            padding-left: 500px; /* Adjust padding to increase size */
+            margin-left: -50px
+                     }
+
+
+
+        .form-control::placeholder {
+        font-size: 16px; /* Modify the placeholder font size */
+        color: #999; /* Placeholder text color */
+    }           
+        </style>
+
+
+
+<div class="container"  >
+
+
+    <div class="poster">
+
+    <div class="insideposter">
+        <h1 class="headofedit"> Add Projects</h1>
+    </div>
+    </div>
+
+    <div class="card info" >
+        <div class="card-body" style="margin-bottom: 100px;">
+            <form id="profileForm" method="POST" enctype="multipart/form-data" style="padding-left:240px;">
+               
+               
+                <div class="row mb-5">
+                    <div class="form-floating mb-1 ms-0" style="margin-left: -20px;">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" style="width: 550px;"></textarea>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="form-floating mb-1 ms-0" style="margin-left: -20px;">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" style="width: 550px;"></textarea>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="form-floating mb-1 ms-0" style="margin-left: -20px;">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" style="width: 550px;"></textarea>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="form-floating mb-1 ms-0" style="margin-left: -20px;">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" style="width: 550px;"></textarea>
+                    </div>
+                </div>
+
+               
+
+                
+                <div class="d-flex py-6">
+                    <a href="#" class="btn btn-primary" style="margin-left: 200px;">Add</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

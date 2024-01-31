@@ -1,0 +1,164 @@
+{% extends 'RMS/main.html' %}
+
+
+
+
+{% block content %}
+
+
+        <style>
+   
+         .form-control {
+            font-size: 18px; /* Modify the font size to make inputs bigger */
+            padding-left: 750px; /* Adjust padding to increase size */
+                     }
+        </style>
+
+
+<div class="container"  >
+
+
+    <div class="poster">
+
+    <div class="insideposter">
+        <h1 class="headofedit"> Edit Profile</h1>
+    </div>
+    </div>
+
+    <div class="card info" >
+        <div class="card-body" style="margin-bottom: 100px;">
+            <form id="profileForm" method="POST" enctype="multipart/form-data">
+
+                <div class="row mb-5">
+                    <div class="col-lg-4">
+                        <label for="exampleInputImage" class="form-label">Profile:</label>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="mb-3" io-image-input="true">
+                            <div class="d-block">
+                                <div class="image-picker"  id="imagePickerContainer">
+                                    <!-- Add your image here -->
+                                </div>
+                                <span class="picker-edit rounded-circle text-gray-500 fs-small" style="width: auto; height:auto;">
+                                    <label>
+                                        <i class="fa-solid fa-pen" id="profileImageIcon"></i>
+                                        <input type="file" id="profilePicture" name="image" class="image-upload d-none profile-validation" accept="image/*" />
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <label class="col-lg-4 form-label nullable">Name </label>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" style = "position:relative; left:100px; width:700px;" ></textarea>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <label class="col-lg-4 form-label nullable">Position </label>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" style = "position:relative; left:100px; width:700px;" ></textarea>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <label class="col-lg-4 form-label required">E-mail</label>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" style = "position:relative; left:100px; width:700px;" ></textarea>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <label class="col-lg-4 form-label required">Phone</label>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" style = "position:relative; left:100px; width:700px;" ></textarea>
+                    </div>
+                </div>
+
+                <h1 style="margin: 15px;"></h1>
+
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label style="font-size: 16px;" class="form-label">Title:</label>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" style = "position:relative; left:100px; width:700px;" ></textarea>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="col-lg-6">
+                            <label style="font-size: 16px;" class="form-label">Description:</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-lg-6">
+                            <textarea class="form-control" rows="3" cols="50"></textarea>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label style="font-size: 16px;" class="form-label">Country:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" style = "position:relative; left:100px; width:700px;" ></textarea>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="col-lg-6">
+                            <label style="font-size: 16px;" class="form-label">City:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" style = "position:relative; left:100px; width:700px;" ></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="d-flex py-6">
+                    <a  href="{% url 'changepassword' %}"  class="btn btn-primary">Update Password</a>
+                </div>
+
+                <div class="d-flex py-6">
+                    <a href="#" class="btn btn-primary">Save</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('profilePicture').addEventListener('change', function (event) {
+        const imagePickerContainer = document.getElementById('imagePickerContainer');
+        const fileInput = event.target;
+        const file = fileInput.files[0];
+
+        if (file) {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                const imageUrl = e.target.result;
+
+                // Update the image picker with the selected image
+                imagePickerContainer.innerHTML = `<img src="${imageUrl}" alt="Selected Image" class="img-fluid rounded-circle">`;
+            };
+
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+
+
+{% endblock %}

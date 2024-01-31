@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% extends 'RMS/main.html' %}
+{% load static %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job History</title>
+   
+<style>
+
+
+
+.card-header {
+    
+    color: black;
+    margin-top:2px;
+   
+}
+
+.list-group-item {
+    border: none;
+}
+
+.list-group-item h6 {
+    margin-bottom: 5px;
+}
+
+.list-group-item p {
+    margin-bottom: 0;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header ">
+            <h2>Job History</h2>
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h6>Software Developer</h6>
+                    <p>id:888215</p>
+                    <p>December 2023 - Present</p>
+                </li>
+                <li class="list-group-item">
+                    <h6>Web Designer</h6>
+                    <p>id:523915</p>
+                    <p>Jule 2023 - Aguest 2023</p>
+                </li>
+                <li class="list-group-item">
+                    <h6>Web Designer</h6>
+                    <p>id:781215</p>
+                    <p>may 2023 - April 2023</p>
+                </li>
+                <li class="list-group-item">
+                    <h6>Web Designer</h6>
+                    <p>id:1838215</p>
+                    <p>June 2023 - februry 2023</p>
+                </li>
+                <li class="list-group-item">
+                    <h6>Web Designer</h6>
+                    <p>id:968215</p>
+                    <p>December 2022 - January 2023</p>
+                </li>
+                <!-- Add more list items for each job -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+{% endblock %}
