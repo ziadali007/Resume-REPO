@@ -1,0 +1,273 @@
+{% extends 'RMS/main.html' %}
+
+
+{% load static %}
+{% block content %}
+
+
+ <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LinkedIn-style Post Card</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+  
+  body, h1, h2, h3, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+.post-card {
+  width: 635px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+   background-color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+}
+
+.company-info h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.company-info p {
+  font-size: 14px;
+  color: #666;
+}
+
+.post-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post-content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.cta-button1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077B5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}.cta-button2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:rgb(226, 62, 62);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.company {
+
+
+margin-right: 400px;
+margin-top;0px;
+
+}
+
+
+.follow-button {
+
+  font-size:20px;
+  padding: 8px 8px;
+  border-radius: 5px;
+  color:rgb(48, 48, 218);
+
+ }
+ .follow-button:hover{
+   
+ background-color:rgb(213, 213, 232);
+
+ }
+.cta-button1:hover{
+ color: #fff;
+ background-color: #0077B5;
+}
+ .cta-button2:hover{
+ color: #fff;
+ background-color:rgb(226, 62, 62);
+}
+ 
+.container2{
+
+ margin-top:20px;;
+
+
+}
+
+  </style>
+</head>
+<body>
+
+<script>
+  function toggleFollow(button) {
+    if (button.innerText === "+Follow") {
+      button.innerText = "Following";
+      // Additional actions/styling when the user follows
+    } else {
+      button.innerText = "+Follow";
+      // Revert any actions/styling when the user unfollows
+    }
+  }
+</script>
+  <div class="container">
+   <div class="post-card">
+    <div class="header">
+
+   
+     <div class="company-info">
+   
+     <a href="companyprofile"  > 
+      <h4 class=" company   text-primary font-size-20 mt-3 mb-2"> Microsoft  </h4>
+      
+       </a>
+          
+       </div>
+    
+     
+     <p class="follow-button font-size-30 mt-3 mb-2" onclick="toggleFollow(this)">+Follow</p>
+    
+
+      
+
+   </div>
+     <div class="post-content">
+     <h2>Do you want to learn more about GitHub?</h2>
+     <p>Our team, in partnership with GitHub, are excited to launch a comprehensive 6-lesson open-source curriculum on Mastering GitHub Copilot for AI Paired Programming. Dive deep into GitHub Copilot's autocompletion, customizable features, and advanced programming techniques. Learn to harness AI-driven algorithms, optimize code quality, and elevate your paired programming skills. From GitHub repositories to Visual Studio Code integration, explore real-time collaboration with GitHub Copilot Chat. Perfect your coding prowess in JavaScript and Python, and craft a Python-based mini-game with Copilot's assistance. Start coding smarter with GitHub Copilot – the ultimate AI paired programming resource. https://lnkd.in/gpjgmqaZ
+            #GitHub #copilot #javascript #python #msftadvocate</p>
+     <a href="#" class="cta-button1">Apply </a>
+     <a href="#" class="cta-button2">Ignore </a>
+   </div>
+
+
+
+  </div>
+  <div class="container2">  
+   <div class="post-card">
+    <div class="header">
+  
+     
+   
+    <div class="company-info">
+     <a href="companyprofile"  >  <h4 class=" company   text-primary font-size-20 mt-3 mb-2"> AMAZON  </h4> </a>      
+    </div>
+     <p class="follow-button font-size-30 mt-3 mb-2" onclick="toggleFollow(this)">+Follow</p>
+
+
+      
+    
+
+   </div>
+     <div class="post-content">
+     <h2>Do you want to learn more about GitHub?</h2>
+     <p>Our team, in partnership with GitHub, are excited to launch a comprehensive 6-lesson open-source curriculum on Mastering GitHub Copilot for AI Paired Programming. Dive deep into GitHub Copilot's autocompletion, customizable features, and advanced programming techniques. Learn to harness AI-driven algorithms, optimize code quality, and elevate your paired programming skills. From GitHub repositories to Visual Studio Code integration, explore real-time collaboration with GitHub Copilot Chat. Perfect your coding prowess in JavaScript and Python, and craft a Python-based mini-game with Copilot's assistance. Start coding smarter with GitHub Copilot – the ultimate AI paired programming resource. https://lnkd.in/gpjgmqaZ
+            #GitHub #copilot #javascript #python #msftadvocate</p>
+     <a href="#" class="cta-button1">Apply </a>
+     <a href="#" class="cta-button2">Ignore </a>
+   </div>
+
+
+
+  </div>
+  <div class="container2">  
+   <div class="post-card">
+    <div class="header">
+  
+     
+  <div class="company-info">
+     <a href="companyprofile">
+     <h4 class="company text-primary font-size-20 mt-3 mb-2">Microsoft</h4>
+     </a> 
+  </div>
+     
+    <p class="follow-button font-size-30 mt-3 mb-2" onclick="toggleFollow(this)">+Follow</p>
+
+
+   </div>
+     <div class="post-content">
+     <h2>Do you want to learn more about GitHub?</h2>
+     <p>Our team, in partnership with GitHub, are excited to launch a comprehensive 6-lesson open-source curriculum on Mastering GitHub Copilot for AI Paired Programming. Dive deep into GitHub Copilot's autocompletion, customizable features, and advanced programming techniques. Learn to harness AI-driven algorithms, optimize code quality, and elevate your paired programming skills. From GitHub repositories to Visual Studio Code integration, explore real-time collaboration with GitHub Copilot Chat. Perfect your coding prowess in JavaScript and Python, and craft a Python-based mini-game with Copilot's assistance. Start coding smarter with GitHub Copilot – the ultimate AI paired programming resource. https://lnkd.in/gpjgmqaZ
+            #GitHub #copilot #javascript #python #msftadvocate</p>
+     <a href="#" class="cta-button1">Apply </a>
+     <a href="#" class="cta-button2">Ignore </a>
+   </div>
+
+
+
+  </div>
+ 
+  <div class="container2">  
+   <div class="post-card">
+    <div class="header">
+  
+    <div class="company-info">
+     <a href="companyprofile"  >  <h4 class=" company  text-primary font-size-20 mt-3 mb-2"> Microsoft  </h4> </a>      
+    </div>
+     
+      <p class="follow-button font-size-30 mt-3 mb-2" onclick="toggleFollow(this)">+Follow</p>
+
+   </div>
+     <div class="post-content">
+     <h2>Do you want to learn more about GitHub?</h2>
+     <p>Our team, in partnership with GitHub, are excited to launch a comprehensive 6-lesson open-source curriculum on Mastering GitHub Copilot for AI Paired Programming. Dive deep into GitHub Copilot's autocompletion, customizable features, and advanced programming techniques. Learn to harness AI-driven algorithms, optimize code quality, and elevate your paired programming skills. From GitHub repositories to Visual Studio Code integration, explore real-time collaboration with GitHub Copilot Chat. Perfect your coding prowess in JavaScript and Python, and craft a Python-based mini-game with Copilot's assistance. Start coding smarter with GitHub Copilot – the ultimate AI paired programming resource. https://lnkd.in/gpjgmqaZ
+            #GitHub #copilot #javascript #python #msftadvocate</p>
+     <a href="#" class="cta-button1">Apply </a>
+     <a href="#" class="cta-button2">Ignore </a>
+   </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

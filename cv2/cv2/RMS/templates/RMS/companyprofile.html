@@ -1,0 +1,274 @@
+{% extends 'RMS/main.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+<style>
+#postContent{
+
+    width:650px;
+}
+.row2{
+    margin-top:-20px;;
+}
+.row3{
+    margin-top:-20px;;
+}
+.cta-button2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:rgb(226, 62, 62);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.cta-button1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+
+.cta-button1:hover{
+ color: #fff;
+ background-color: #0077B5;
+}
+ .cta-button2:hover{
+ color: #fff;
+ background-color:rgb(226, 62, 62);
+}
+
+
+</style>
+</head>
+
+<div class="container">
+<span >
+  <div class="row">
+    <div class="col-xl-8">
+        <div class="card">
+            <div class="card-body pb-0">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="text-center border-end">
+                            <img src="https://avatarfiles.alphacoders.com/210/210164.jpg" class="img-fluid avatar-xxl rounded-circle" alt="">
+                            <br>
+                            <br>
+                            <a href="Editprof">
+                                <button type="button" onclick="location.href='Editprof'" href="Editprof" class="btn btn-outline-dark" data-mdb-ripple-color="dark" style="z-index: 1; "> Edit profile </button>
+                            </a>
+                            <h4 class="text-primary font-size-20 mt-3 mb-2">Microsoft</h4>
+                            <h5 class="text-muted font-size-13 mb-0">Software Company</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="ms-3">
+                            <div>
+                                <h4 class="card-title mb-2">Microsoft</h4>
+                                <p class="mb-0 text-muted">Microsoft Corporation is an American multinational technology corporation headquartered in Redmond, Washington. </p>
+                            </div>
+                            <div class="row my-4">
+                                <div class="col-md-12">
+                                    <div>
+                                        <p class="text-muted mb-2 fw-medium"><i class="mdi mdi-email-outline me-2"></i>Janshwells@probic.com
+                                        </p>
+                                        <p class="text-muted fw-medium mb-0"><i class="mdi mdi-phone-in-talk-outline me-2"></i>418-955-4703
+                                        </p>
+                                    </div>                                   
+                                </div>
+                                <button type="button" onclick="location.href='https://www.microsoft.com'" class="btn btn-link">www.microsoft.com</button>
+                            
+                            </div>
+                         
+                            <ul class="nav nav-tabs nav-tabs-custom border-bottom-0 mt-3 nav-justfied" role="tablist" style = "position:relative; left:80px;">
+                                
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link px-4 "  href="Status" target="__blank">
+                                        <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                        <span class="d-none d-sm-block">Status</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link px-4 "  href="JobsHistory" target="__blank">
+                                        <span class="d-block d-sm-none"><i class="mdi mdi-account-group-outline"></i></span>
+                                        <span class="d-none d-sm-block">Jobs History</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link px-4 "  href="JobRequirements" target="__blank">
+                                        <span class="d-block d-sm-none"><i class="mdi mdi-account-group-outline"></i></span>
+                                        <span class="d-none d-sm-block">New Job</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <span>
+        <div class="row2">
+            <div class="create col-xl-20">
+                
+            </div>
+        </div>        <!-- Create a New Job Card -->
+         
+    </span>
+    <div class="row3">
+        <div class="card">
+            <div class="tab-content p-4">
+                
+
+                <div class="tab-pane active show" id="tasks-tab" role="tabpanel">
+                    <h4 class="card-title mb-4">Posts</h4>
+
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="task-list-box" id="landing-task">
+                                <div id="task-item-1">
+                                    <div class="timeline-content">
+                                        <p class="lead">
+                                           <i class=""></i>
+                                          
+                                           Microsoft Weather is ranked as the most accurate weather forecast. We aim to empower individual to stay prepared, healthy, and safe with the most accurate forecast powered by AI. Microsoft Weather product has footprint across Windows, Office, Bing, Edge, and Skype, reaching to over 1 billion users every day.
+
+                                           We are looking for a highly motivated and experienced product manager to join our Weather team to build the state-of-the art weather product with the latest cutting edge technologies. If you are passionate about solving user problem and want to work in a dynamic and fast-paced environment, we want to hear from you!.
+                                            <i class=""></i>
+                                        </p>
+                                    </div>
+                                    <div >
+
+                                     <a href="EditRequirements" class="cta-button1">Edit </a>
+                                     <a href="#" class="cta-button2">Delete </a>
+
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <hr>
+                            <br>
+                            <div class="task-list-box" id="design-task">
+                                <div id="task-item-2">
+                                    <div class="timeline-content">
+                                        <p class="lead">
+                                           <i class=""></i> We are looking for a passionate, experienced, technical specialist with a drive to help solve complex security challenges for our customers, enabling them to help modernize their security architecture and posture.  Join our team and discover unique opportunities to grow, develop and learn..
+                                             <i class=""></i>
+                                        </p>
+                                    </div>
+                                    <div >
+                                    <a href="EditRequirements" class="cta-button1">Edit </a>
+                                     <a href="#" class="cta-button2">Delete </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <hr>
+                            <br>
+
+                            <div class="task-list-box" id="blog-task">
+                                <div id="task-item-3">
+                                    <div class="timeline-content">
+                                        <p class="lead">
+                                           <i class=""></i> We are looking for a passionate, experienced, technical specialist with a drive to help solve complex security challenges for our customers, enabling them to help modernize their security architecture and posture.  Join our team and discover unique opportunities to grow, develop and learn..
+                                            <i class=""></i>
+                                        </p>
+                                    </div>
+                                    <div >
+                                    <a href="#" class="cta-button1">Edit </a>
+                                     <a href="#" class="cta-button2">Delete </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <hr>
+                            <br>
+
+                            <div class="task-list-box" id="comp-task">
+                                <div id="task-item-4">
+                                    <div class="timeline-content">
+                                        <p class="lead">
+                                           <i class=""></i> We are looking for a passionate, experienced, technical specialist with a drive to help solve complex security challenges for our customers, enabling them to help modernize their security architecture and posture.  Join our team and discover unique opportunities to grow, develop and learn..
+                                            <i class=""></i>
+                                        </p>
+                                    </div>
+                                    <div >
+                                    <a href="#" class="cta-button1">Edit </a>
+                                     <a href="#" class="cta-button2">Delete </a>
+                                   </div>
+                                    
+                                </div>
+                            </div>
+                            <hr>
+                            <br>
+
+                            <div class="task-list-box" id="app-task">
+                                <div id="task-item-5">
+                                    <div class="timeline-content">
+                                        <p class="lead">
+                                           <i class=""></i> We are looking for a passionate, experienced, technical specialist with a drive to help solve complex security challenges for our customers, enabling them to help modernize their security architecture and posture.  Join our team and discover unique opportunities to grow, develop and learn..
+                                            <i class=""></i>
+                                        </p>
+                                    </div>
+                                    <div >
+                                    <a href="#" class="cta-button1">Edit </a>
+                                     <a href="#" class="cta-button2">Delete </a>
+                                   </div>
+                                    
+                                </div>
+                            </div>
+                         
+                            <br>           
+                           
+
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        </div> 
+    </div>
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="pb-2">
+                    <h4 class="card-title mb-3">About</h4>
+                    <p>Hi I'm Jansh, has been the industry's standard dummy text To an English
+                        person, it will seem like
+                        simplified.</p>
+                    <ul class="ps-3 mb-0">
+                        <li>it will seem like simplified.</li>
+                        <li>To achieve this, it would be necessary to have uniform pronunciation</li>
+                    </ul>
+                </div>
+                <hr>
+                <br>
+                <div class="pb-2">
+                    <h4 class="card-title mb-3">Location</h4>
+                    <p>Microsoft Have Alot Of Locations Around The World .</p>
+                    <ul class="ps-3 mb-0">
+                        <li>Alabama.</li>
+                        <li>Hawaii</li>
+                        <li>Minnesota.</li>
+                        <li>Oklahoma</li>
+                        <li>Arkansas.</li>
+                        <li>California</li>
+                        <li>Kansas.</li>
+                        <li>Texas</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div> 
+    </div>
+ </div>
+<span >
+</div>
+
+{% endblock %}

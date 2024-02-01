@@ -1,0 +1,39 @@
+{% comment %} {% extends 'RMS/main.html' %}
+
+{% block content %}
+
+<h2> login  </h2>
+<br>
+{% for msg in messages %}
+<h4> {{msg}} </h4>
+{% endfor %}
+{% endblock %} {% endcomment %}
+
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet " type="text/css" href="{% static '/css/style.css' %}">
+  
+<div class="signin" >
+ <h1> Sign In </h1>
+<form method="POST" >
+  {% csrf_token %}
+    <label for="username" >User name</label>
+    <input type="text" id="username"  name= "username" class="form-control "  width = "300px" >
+  <br>
+    <label for="password" class="form-label">Password</label>
+    <input type="password" id="password" name="password" class="form-control"  width = "300px">
+  <br>
+  <br>
+  <button type="submit" class="btn btn-primary">Submit</button>     
+    
+          
+          <div  class=" member"> 
+            <p>You dont have an account?  <a href = "{% url 'register'%}"> Register Now  </a> <p/>
+          </div>
+
+ {% endblock %}
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
